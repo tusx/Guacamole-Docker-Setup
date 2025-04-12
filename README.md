@@ -1,7 +1,7 @@
 # Guacamole + Docker Setup
 Following are the instruction on how to setup Guacamole in docker and use it to SSH into the host Machine
 ## Step 1
-Create the Guacamole Docker Container, i personally use this image `flcontainers/guacamole` Source can be found here https://github.com/flcontainers/guacamole
+Create the Guacamole Docker Container, i personally use this image `flcontainers/guacamole`. Source for the image can be found here https://github.com/flcontainers/guacamole.
 Create Container like this
 ```
 docker run -d --name=guacamole --restart=always -p 8080:8080 -v guacamole_data:/config flcontainers/guacamole
